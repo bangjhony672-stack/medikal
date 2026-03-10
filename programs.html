@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Program Belajar - Medikal Underwater</title>
+  <!-- Tailwind CSS v3 CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'rara-teal': '#00B4D8',
+            'rara-dark': '#1A1A1A',
+            'rara-gray': '#333333',
+          },
+          fontFamily: {
+            'sans': ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style data-purpose="typography">
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+    .font-heavy { font-weight: 800; }
+  </style>
+</head>
+<body class="bg-white text-rara-dark font-sans">
+  <!-- BEGIN: Navbar -->
+  <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+    <div class="container mx-auto px-4 flex justify-between items-center py-4">
+      <a href="index.html" class="text-2xl font-heavy text-rara-dark">
+        MEDIKAL <span class="text-rara-teal">UNDERWATER</span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="about.html" class="font-semibold hover:text-rara-teal transition-colors">Tentang Kami</a>
+        <a href="programs.html" class="font-semibold text-rara-teal transition-colors" aria-current="page">Program</a>
+        <a href="coaches.html" class="font-semibold hover:text-rara-teal transition-colors">Coach</a>
+        <a href="schedule.html" class="font-semibold hover:text-rara-teal transition-colors">Jadwal</a>
+        <a href="members.html" class="font-semibold hover:text-rara-teal transition-colors">Member</a>
+        <a href="contact.html" class="font-semibold hover:text-rara-teal transition-colors">Kontak</a>
+      </nav>
+      <a href="contact.html" class="hidden lg:inline-block bg-rara-teal text-white px-6 py-2 rounded-full font-bold hover:bg-opacity-90 transition-all">
+        Daftar
+      </a>
+      <button id="mobile-menu-btn" class="lg:hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden">
+      <nav class="flex flex-col items-center gap-4 py-4">
+        <a href="about.html" class="font-semibold hover:text-rara-teal transition-colors">Tentang Kami</a>
+        <a href="programs.html" class="font-semibold text-rara-teal transition-colors">Program</a>
+        <a href="coaches.html" class="font-semibold hover:text-rara-teal transition-colors">Coach</a>
+        <a href="schedule.html" class="font-semibold hover:text-rara-teal transition-colors">Jadwal</a>
+        <a href="members.html" class="font-semibold hover:text-rara-teal transition-colors">Member</a>
+        <a href="contact.html" class="font-semibold hover:text-rara-teal transition-colors">Kontak</a>
+        <a href="contact.html" class="bg-rara-teal text-white px-6 py-2 rounded-full font-bold hover:bg-opacity-90 transition-all mt-2">
+          Daftar
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BEGIN: Program Belajar -->
+  <section class="py-24 bg-gray-50" id="programs">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-heavy italic">PROGRAM <span class="text-rara-teal">BELAJAR</span></h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Kelas Whale -->
+        <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 text-center hover:shadow-xl transition-shadow group" data-purpose="program-card">
+          <div class="h-32 flex items-center justify-center mb-6">
+            <img alt="Kelas Whale" class="group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn3T7RXHt2Z99ll0IwkkuaAq80P3FJ-cBI4U7nqvYFuVVCkcQXJq0U0IBTMkLMSVasWHjTlaQlUVd0hj89_mhgSt-gbRwxLaojCroL1yewZOAA36yVdz1LV0Y6ymwCE0nXYPZ4ctbOyLXCB22Ri6pHVWn-wfk8Yu0y8ueknDIaa5Fzb4uqfcSe8_USaVGK6acy9rSUxFrZGsRcZZ4wWy3Wp8bRK1fvfQvwTYRE-NuyCe0JghpnkMWpqDUl2NhXHoZWEeMh_T0eCYAs"/>
+          </div>
+          <h3 class="text-xl font-heavy mb-4">KELAS UBUR - UBUR</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Kelas untuk dewasa dan lansia yang berfokus kepada peningkatan kondisi fisik dan memelihara kebugaran tubuh melalui tehnik gaya berenang yang baik.
+          </p>
+        </div>
+        <!-- Kelas Nemo -->
+        <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 text-center hover:shadow-xl transition-shadow group" data-purpose="program-card">
+          <div class="h-32 flex items-center justify-center mb-6">
+            <img alt="Kelas Nemo" class="group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl9dmi79XuFMmp_2BCReOOTPCJm-PSiDGu-nn1C9MH2fl7cLAwgEiqI-rQNq2zCr5CagiiS8f3m_c1tuLB-gd4Sk1A1n0E67BedtjaZdjcA1kGLqsGUFi6N-HTTsNO0Pc8lgUXibnIBN9sCP2ItihQd_AMW6yBM6k74xQ14R6DlPa_0ZZSw17g6LyvJN2kuCrlP3dIw0-pBeO22LJ4Ic7STixmQ7tgC8wL2oZjda311CL01Vh-tadGuNxJJjKpTgZlqJuNEdfhkzRu"/>
+          </div>
+          <h3 class="text-xl font-heavy mb-4">KELAS JULUNG - JULUNG </h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Kelas yang berfokus kepada pengenalan secara dini kegiatan di air kepada balita rentang usia 9 bulan sampai 36 bulan.
+          </p>
+        </div>
+        <!-- Kelas Dolphin -->
+        <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 text-center hover:shadow-xl transition-shadow group" data-purpose="program-card">
+          <div class="h-32 flex items-center justify-center mb-6">
+            <img alt="Kelas Dolphin" class="group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAGwMoU8dmcMNxIvBz2AI_rIIkqlfpGiPzKPZrm4CUg9RatspDJzLKp2YNuFccQ5GIrLIavS2JYBJNkGvb_bP1uE6oOVg4sVzDBh-kvkTHKzGREEbcvMwo8j-UjBmkey5gmQV3G0H-n6Lkvpnsj3qzUSS6xa-mw8K1o-fbqxynz6F1CJ5H-yXE3MTQ3cJHn28V7TCg5cUd-bPkFiBZplnwXRdurqt3yfYQbdqMb3bdsd785fWvHAo_lH-29CXvYR2JrQVfOhMHyjs8"/>
+          </div>
+          <h3 class="text-xl font-heavy mb-4">KELAS LINGSANG</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Kelas untuk anak berkebutuhan khusus dari usia 1 - 12 tahun. Memberikan pelatihan motorik untuk memberikan focus kepada anak.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: Program Belajar -->
+
+  <!-- BEGIN: Footer -->
+  <footer class="bg-rara-gray text-white py-12">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2024 MEDIKAL UNDERWATER. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- END: Footer -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileMenuBtn.addEventListener('click', function () {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Close mobile menu when a link is clicked
+      const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+      mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

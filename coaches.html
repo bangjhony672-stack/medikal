@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Coach - Medikal Underwater</title>
+  <!-- Tailwind CSS v3 CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'rara-teal': '#00B4D8',
+            'rara-dark': '#1A1A1A',
+            'rara-gray': '#333333',
+          },
+          fontFamily: {
+            'sans': ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style data-purpose="typography">
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+    .font-heavy { font-weight: 800; }
+  </style>
+</head>
+<body class="bg-white text-rara-dark font-sans">
+  <!-- BEGIN: Navbar -->
+  <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+    <div class="container mx-auto px-4 flex justify-between items-center py-4">
+      <a href="index.html" class="text-2xl font-heavy text-rara-dark">
+        MEDIKAL <span class="text-rara-teal">UNDERWATER</span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="about.html" class="font-semibold hover:text-rara-teal transition-colors">Tentang Kami</a>
+        <a href="programs.html" class="font-semibold hover:text-rara-teal transition-colors">Program</a>
+        <a href="coaches.html" class="font-semibold text-rara-teal transition-colors">Guru</a>
+        <a href="schedule.html" class="font-semibold hover:text-rara-teal transition-colors">Jadwal</a>
+        <a href="members.html" class="font-semibold hover:text-rara-teal transition-colors">Member</a>
+        <a href="contact.html" class="font-semibold hover:text-rara-teal transition-colors">Kontak</a>
+      </nav>
+      <a href="contact.html" class="hidden lg:inline-block bg-rara-teal text-white px-6 py-2 rounded-full font-bold hover:bg-opacity-90 transition-all">
+        Daftar
+      </a>
+      <button id="mobile-menu-btn" class="lg:hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden">
+      <nav class="flex flex-col items-center gap-4 py-4">
+        <a href="about.html" class="font-semibold hover:text-rara-teal transition-colors">Tentang Kami</a>
+        <a href="programs.html" class="font-semibold hover:text-rara-teal transition-colors">Program</a>
+        <a href="coaches.html" class="font-semibold text-rara-teal transition-colors">Coach</a>
+        <a href="schedule.html" class="font-semibold hover:text-rara-teal transition-colors">Jadwal</a>
+        <a href="members.html" class="font-semibold hover:text-rara-teal transition-colors">Member</a>
+        <a href="contact.html" class="font-semibold hover:text-rara-teal transition-colors">Kontak</a>
+        <a href="contact.html" class="bg-rara-teal text-white px-6 py-2 rounded-full font-bold hover:bg-opacity-90 transition-all mt-2">
+          Daftar
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BEGIN: Guru Kami -->
+  <section class="py-24 bg-rara-dark text-white relative overflow-hidden" id="coaches">
+    <div class="absolute inset-0 opacity-10">
+      <img alt="Background Pool" class="w-full h-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0HdWDayRHQF-cCxgCpsQK2PzUMN2yqhGlJQnHIfBVSxJg9ukQjE5oetfjEW944_ASXcc4lrH1LAzpPEQhSi7oX9WT4dgvwqpqulnOUiDPRloQjlnpWgUK9_E0QK-Sfzn0XGJfX_ERSeHY536yKxAuKueqIKyAIa6Aw8ftN7YDQ5zjKHlTZp6VN8XNk_SCqOqVbfVxJyNYj-v_Cfd7qvEygVe94M01LlaebgiB1JOrIFrcFzFbQQDeQFqGeHpNmeb_uVi508zDv_f1"/>
+    </div>
+    <div class="container mx-auto px-4 relative z-10 text-center">
+      <h2 class="text-4xl font-heavy italic mb-16">GURU <span class="text-rara-teal">KAMI</span></h2>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Coach Dias -->
+        <div class="flex flex-col items-center">
+          <div class="w-48 h-48 lg:w-64 lg:h-64 rounded-full border-4 border-yellow-400 overflow-hidden mb-6">
+            <img alt="Coach Dias" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgZPt7-ZqqhlgpwaXKV8wLOVbGI9Btaelf6XPVuhdfqADvb2tokrNprmvlnjb9d36jTC9sHZT6ifOs5xjUzjtoUYBzAG0gwcfXIQiC33mRU37z-KTmVSedrQk2TxhtCguH8Nn8ZEuAWmejRxcr0JTsq0aDI_WE2AjqPNi6NTpfd2mtEcjRuGVY4XeFFs0kkAvCJ8xbQuutlgQklkwFHp5W5QCi-a3ED8pggbM3utybH88WqFEa0RwdoGpr01E4Ux_bWhZGiboE09N-"/>
+          </div>
+          <h4 class="text-2xl font-bold uppercase">BEJO</h4>
+          <p class="text-rara-teal font-medium">Male Coach</p>
+        </div>
+        <!-- Coach Yusuf -->
+        <div class="flex flex-col items-center">
+          <div class="w-48 h-48 lg:w-64 lg:h-64 rounded-full border-4 border-yellow-400 overflow-hidden mb-6">
+            <img alt="Coach Yusuf" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoyjdrnvyuC3l5suWUtCFQanMYoM_M158gQyePKIVKAj7KeyWcJUrz6_UbLgoYCZYPwH2n3bw07a-dIZgwlr-5D-2uqtmbay-PHe4oObJmTPAyFmONMJ2KfaoF656tv4JKPrNTAcxagF18EF0vlcvmnmHu6BMOt_Mea2hti3tDy-Q1WOwTGKjku9yMXxv6UPceqS8uReHit02nMkokYeFUO7qiRwMObOAEDwd67Y3s4WG5I3QtEsvuIKDnTP7VfaUwyYyyCvd35sXI"/>
+          </div>
+          <h4 class="text-2xl font-bold uppercase">INDRA</h4>
+          <p class="text-rara-teal font-medium">Male Coach</p>
+        </div>
+        <!-- Coach Nur & Amel -->
+        <div class="flex flex-col items-center">
+          <div class="w-48 h-48 lg:w-64 lg:h-64 rounded-full border-4 border-yellow-400 overflow-hidden mb-6">
+            <img alt="Coach Nur &amp; Amel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE23zPsWwmGI0GYMsAUQ3Pf8qiJ7prfzs8iFcY-Wh2KJR4Jbz3qUSsrJQHBb_hHLFBoKqTtQi7JS9HKCcYuxAbwnZRWzvrwRidqhzd-0l36R4naqMpddzfZdvXQ1JxoxSkyUvL6b4k7hIFy0EWY250xEpL57w1MZpHh50A0TOOjsjy_UIb2ynDNEuMQaafYlBgB861agO4KSGpkiMmveOX-FHzMYehEuC-lhyzDwvwtTfLY2xexBn9Q8P57QCjWPIKh4DpBDbJ935E"/>
+          </div>
+          <h4 class="text-2xl font-bold uppercase">ANJAR &amp; AMEL</h4>
+          <p class="text-rara-teal font-medium">Female Coach</p>
+        </div>
+        <!-- Coach Okta -->
+        <div class="flex flex-col items-center">
+          <div class="w-48 h-48 lg:w-64 lg:h-64 rounded-full border-4 border-yellow-400 overflow-hidden mb-6">
+            <img alt="Coach Okta" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIGPNTJMWNfhE_gKAMmNKs1NfWYjraJT6UeO5wVBnYfqmZzxOnZypNeGad8QKH4ts8mmWQEk4EI4HI8SsDP8zbNSoCGzHvPGe377QHcpazcyZE2GwWN6DdiQHTcjzmEnlYf142eHmwdMuJWRjwqA8mQN5jj-L1bX3xvgzBHyKvidhydhhFAs0h3ayEp3JTCimdoeHSC3HvGcTC30Js4hkmHRFV6Nvac6GaWLvKjf1z0vUjkB4W2xAuR5qqoTDSjW6wgHGOldEC7wLJ"/>
+          </div>
+          <h4 class="text-2xl font-bold uppercase">OKTA</h4>
+          <p class="text-rara-teal font-medium">Female Coach</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: Guru Kami -->
+
+  <!-- BEGIN: Footer -->
+  <footer class="bg-rara-gray text-white py-12">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2024 MEDIKAL UNDERWATER. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- END: Footer -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileMenuBtn.addEventListener('click', function () {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Close mobile menu when a link is clicked
+      const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+      mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

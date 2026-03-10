@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Jadwal - Medikal Underwater</title>
+  <!-- Tailwind CSS v3 CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'rara-teal': '#00B4D8',
+            'rara-dark': '#1A1A1A',
+            'rara-gray': '#333333',
+          },
+          fontFamily: {
+            'sans': ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style data-purpose="typography">
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+    .font-heavy { font-weight: 800; }
+  </style>
+</head>
+<body class="bg-white text-rara-dark font-sans">
+  <!-- BEGIN: Navbar -->
+  <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+    <div class="container mx-auto px-4 flex justify-between items-center py-4">
+      <a href="index.html" class="text-2xl font-heavy text-rara-dark">
+        MEDIKAL <span class="text-rara-teal">UNDERWATER</span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="about.html" class="font-semibold hover:text-rara-teal transition-colors">Tentang Kami</a>
+        <a href="programs.html" class="font-semibold hover:text-rara-teal transition-colors">Program</a>
+        <a href="coaches.html" class="font-semibold hover:text-rara-teal transition-colors">Coach</a>
+        <a href="schedule.html" class="font-semibold text-rara-teal transition-colors" aria-current="page">Jadwal</a>
+        <a href="members.html" class="font-semibold hover:text-rara-teal transition-colors">Member</a>
+        <a href="contact.html" class="font-semibold hover:text-rara-teal transition-colors">Kontak</a>
+      </nav>
+      <a href="contact.html" class="hidden lg:inline-block bg-rara-teal text-white px-6 py-2 rounded-full font-bold hover:bg-opacity-90 transition-all">
+        Daftar
+      </a>
+      <button id="mobile-menu-btn" class="lg:hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden">
+      <nav class="flex flex-col items-center gap-4 py-4">
+        <a href="about.html" class="font-semibold hover:text-rara-teal transition-colors">Tentang Kami</a>
+        <a href="programs.html" class="font-semibold hover:text-rara-teal transition-colors">Program</a>
+        <a href="coaches.html" class="font-semibold hover:text-rara-teal transition-colors">Coach</a>
+        <a href="schedule.html" class="font-semibold text-rara-teal transition-colors">Jadwal</a>
+        <a href="members.html" class="font-semibold hover:text-rara-teal transition-colors">Member</a>
+        <a href="contact.html" class="font-semibold hover:text-rara-teal transition-colors">Kontak</a>
+        <a href="contact.html" class="bg-rara-teal text-white px-6 py-2 rounded-full font-bold hover:bg-opacity-90 transition-all mt-2">
+          Daftar
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BEGIN: Jadwal Buka -->
+  <section class="py-24 bg-white" id="schedule">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-heavy italic text-center mb-16 uppercase">JADWAL <span class="text-rara-teal">BUKA</span> KOLAM</h2>
+      <div class="overflow-x-auto rounded-3xl shadow-2xl bg-black/90 p-1">
+        <table class="w-full text-white min-w-[800px]">
+          <thead>
+            <tr class="bg-rara-teal text-white">
+              <th class="p-6 text-left border-r border-white/20">Kolam</th>
+              <th class="p-6 border-r border-white/20">RARA Aquatik 1</th>
+              <th class="p-6 border-r border-white/20">RARA Aquatik 2</th>
+              <th class="p-6 border-r border-white/20">RARA Aquatik 3</th>
+              <th class="p-6 border-r border-white/20">RARA Aquatik 4</th>
+              <th class="p-6">RARA Aquatik 5</th>
+            </tr>
+          </thead>
+          <tbody class="text-center font-medium divide-y divide-white/10">
+            <tr>
+              <td class="p-6 text-left font-bold border-r border-white/20">Senin</td>
+              <td class="p-4 border-r border-white/20 text-xs"><span class="text-rara-teal block font-bold">Open</span> 09:00 - 17:30</td>
+              <td class="p-4 border-r border-white/20">-</td>
+              <td class="p-4 border-r border-white/20">-</td>
+              <td class="p-4 border-r border-white/20 text-xs"><span class="text-rara-teal block font-bold">Open</span> 15:00 - 17:00</td>
+              <td class="p-4">-</td>
+            </tr>
+            <tr>
+              <td class="p-6 text-left font-bold border-r border-white/20">Selasa</td>
+              <td class="p-4 border-r border-white/20 text-xs"><span class="text-rara-teal block font-bold">Open</span> 09:00 - 17:30</td>
+              <td class="p-4 border-r border-white/20 text-xs"><span class="text-rara-teal block font-bold">Open</span> 08:00 - 17:30</td>
+              <td class="p-4 border-r border-white/20">-</td>
+              <td class="p-4 border-r border-white/20">-</td>
+              <td class="p-4">-</td>
+            </tr>
+            <tr class="bg-white/5">
+              <td class="p-6 text-left font-bold border-r border-white/20">Rabu</td>
+              <td class="p-4 border-r border-white/20 text-xs"><span class="text-rara-teal block font-bold">Open</span> 09:00 - 17:30</td>
+              <td class="p-4 border-r border-white/20 text-xs"><span class="text-rara-teal block font-bold">Open</span> 08:00 - 17:30</td>
+              <td class="p-4 border-r border-white/20">-</td>
+              <td class="p-4 border-r border-white/20">-</td>
+              <td class="p-4 text-xs"><span class="text-rara-teal block font-bold">Open</span> 08:00 - 17:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <!-- END: Jadwal Buka -->
+
+  <!-- BEGIN: Footer -->
+  <footer class="bg-rara-gray text-white py-12">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2024 MEDIKAL UNDERWATER. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- END: Footer -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileMenuBtn.addEventListener('click', function () {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Close mobile menu when a link is clicked
+      const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+      mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
